@@ -26,24 +26,35 @@
             cout<<"\n\nEnter Element you want to insert : ";
             cin>> element; 
 
+             // Increment length / size of an array
+            n++; 
+
+            label:
             cout<<"\nEnter the Position Where to insert an Element : ";
             cin >> pos ; 
-            // Increment length / size of an array
-                n++; 
 
-            // Shif elements after the position to the right 
-            for(int i = n - 1 ; i > pos ; i--)
+            if(pos < 0 || pos > n - 1)
             {
-                arr[i] = arr[i-1];
+                cout<<"\nError ==> Invalid Position";
+                cout<<"\nPlease Enter Position Between 0 to "<<n-1;
+                goto label; 
             }
-            // Add the element at the specific position of Array
-            arr[pos] = element;
-
-            // Print the New/Updated Array
-            cout << "\nUpdated  Array : ";
-            for (int i = 0 ; i < n ; i++) 
+            else 
             {
-                cout << arr[i] << " ";
+                // Shif elements after the position to the right 
+                for(int i = n - 1 ; i > pos ; i--)
+                {
+                    arr[i] = arr[i-1];
+                }
+                // Add the element at the specific position of Array
+                arr[pos] = element;
+
+                // Print the New/Updated Array
+                cout << "\nUpdated  Array : ";
+                for (int i = 0 ; i < n ; i++) 
+                {
+                    cout << arr[i] << " ";
+                }
             }
             cout << endl;
             }
