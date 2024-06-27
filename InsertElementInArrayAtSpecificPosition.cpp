@@ -41,12 +41,13 @@
             }
             else 
             {
-                // Shif elements after the position to the right 
+                // Shif elements from the position to the right 
                 for(int i = n - 1 ; i > pos ; i--)
                 {
                     arr[i] = arr[i-1];
                 }
-                // Add the element at the specific position of Array
+
+                //insert element at the given position
                 arr[pos] = element;
 
                 // Print the New/Updated Array

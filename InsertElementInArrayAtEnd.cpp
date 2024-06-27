@@ -10,7 +10,7 @@
             cin>>n ;
             
             cout<<endl;
-            
+
             int arr[n]; 
             
             for(int i = 0 ; i < n ; i++)
@@ -24,9 +24,8 @@
             {
                 cout << arr[i] << " ";
             }
-            cout << endl;
-
-            cout<<"\nEnter Element you want to insert : ";
+        
+            cout<<"\n\nEnter Element you want to insert : ";
             cin>> element; 
 
             // Increment size of array
