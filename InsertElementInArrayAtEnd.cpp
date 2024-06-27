@@ -1,4 +1,4 @@
-        // C++ program to add an element at the beginning of an array
+        // C++ program to add an element at the end of an array
         #include <iostream>
         using namespace std;
 
@@ -32,14 +32,8 @@
             // Increment size of array
             n++; 
 
-            // Shift all elements one position to the right
-            for (int i = n ; i > 0 ; i--) 
-            {
-                arr[i] = arr[i - 1];
-            }
-
-            // Add the element at the beginning of the array
-            arr[0] = element;
+            // Add the element at the end of the array
+            arr[n - 1] = element;
 
             // Print the New / Updated array
             cout << "\nUpdated Array  : ";
