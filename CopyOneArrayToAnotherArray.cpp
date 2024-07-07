@@ -7,7 +7,7 @@
 
         int main()
         {
-            int n ;
+            int n ; 
 
             cout<<"Enter the Size of an Array : ";
             cin>>n ;
