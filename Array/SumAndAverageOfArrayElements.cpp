@@ -1,6 +1,6 @@
         /*
             Write a C++ program that inputs N Numbers of Array Elements, Calculate Sum of
-            the Array Elements, and Avarage of Array elements and then Display the Sum and
+            the Array Elements, and Average of Array Elements and then Display the Sum and
             Average of Array. 
         */
         #include<iostream>
