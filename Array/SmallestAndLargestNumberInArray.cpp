@@ -10,7 +10,7 @@
 
             int arr[n] ; 
 
-            cout<<"\nPlease Input " <<n<< " Array Elements in the Array\n\n";
+            cout<<"\nPlease Input " <<n<< " Elements in the Array\n\n";
 
             for(int i = 0 ; i < n ; i++)
             {
