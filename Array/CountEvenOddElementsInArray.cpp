@@ -1,20 +1,16 @@
-        /*
-            Write a C++ program that inputs N Numbers of Array Elements, find
-            and Display the Smallest Element in the Array. 
-        */
-        #include<iostream>
+#include<iostream>
         using namespace std;
 
         int main()
         {
-            int n , min  ;
+            int n , even = 0 , odd = 0 ;
 
             cout<<"Enter the Size of an Array : ";
             cin>>n ;
 
             int arr[n] ; 
 
-            cout<<"\nPlease input " <<n<< " Elements in the Array : \n\n";
+            cout<<"\nPlease Input " <<n<< " Elements in the Array\n\n";
 
             for(int i = 0 ; i < n ; i++)
             {
@@ -22,22 +18,24 @@
                 cin>>arr[i] ;
             }
 
-            cout<<"\nOriginal Array   : ";
+            cout<<"\nOriginal Array  : ";
             for(int i = 0 ; i < n ; i++)
             {
                cout<<arr[i]<< "  " ;
             }
-
-            min = arr[0];
-
             for(int i = 0 ; i < n ; i++)
             {
-                if( arr[i] < min )
+                if( arr[i] % 2 == 0)
                 {
-                    min = arr[i] ;
+                    even++;
                 }
-                    
+                else
+                {
+                    odd++;
+                }
             }
-            cout<<"\n\nSmallest Element : " <<min<<endl ;
+            
+            cout<<"\n\nTotal Even Numbers in the Array : " <<even<<endl;
+            cout<<"\nTotal Odd  Numbers in the Array : " <<odd<<endl;
             return 0 ;
         }
