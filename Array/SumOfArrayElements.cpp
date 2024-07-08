@@ -1,6 +1,6 @@
         /*
-            Write a C++ program that inputs N Numbers of Array Elements and Sum of
-            the All Array Elements and Print the Sum. 
+            Write a C++ program that inputs N Numbers of Array Elements, Calculate the 
+            Sum of the Array Elements and Display the Sum. 
         */
         #include<iostream>
         using namespace std;
@@ -9,12 +9,12 @@
         {
             int n , sum = 0  ;
 
-            cout<<"Enter the Size of an Array : ";
+            cout<<"Enter the Size of the Array : ";
             cin>>n ;
 
             int arr[n] ; 
 
-            cout<<"\nPlease input  " <<n<< " elements in Array \n\n";
+            cout<<"\nPlease Input  " <<n<< " Elements in the Array \n\n";
 
             for(int i = 0 ; i < n ; i++)
             {
